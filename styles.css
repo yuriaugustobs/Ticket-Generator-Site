@@ -309,3 +309,112 @@ body {
     font-size: 0.8rem;
     letter-spacing: 0.8rem;
 }
+
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        background-image: url(/assets/images/background-mobile.png);
+    }
+
+    .laco-base-esquerdo{
+        position: absolute;
+        height: 10rem;
+        z-index: -1;
+        bottom: 0;
+        margin-bottom: -5rem;
+    }
+
+    .laco-topo-direito{
+        height: 3.5rem;
+        top: 3%;
+    }
+
+    #container-main-title{
+        width: 90vw;
+    }
+
+    #container-main-title h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    #container-form{
+        width: 100%;
+    }
+
+    .upload-avatar{
+        align-self: center;
+        width: 85vw;
+    }
+    
+    .input-field{
+        width: 85vw !important;
+    }
+
+    .gerar-ticket{
+        width: 85vw;
+    }
+
+    #ticket-gerado{
+        width: 100%;
+    }
+
+    #ticket-gerado h1{
+        font-size:1.8rem;
+        line-height: 1.5;
+    }
+
+    .new-ticket{
+        width: 85vw;
+        margin-top: 1rem;
+    }
+
+    .logo-container-ticket{
+        position: absolute;
+        margin-top: 4rem;
+        margin-left: 1rem;
+    }
+
+    #h3-title{
+        font-size: 1.4rem!important;
+    }
+
+    .date{
+        position: absolute;
+        margin-top: 8.5rem;
+        margin-left: 2rem;
+    }
+
+    .user-avatar{
+        height: 3.2rem;
+        position: absolute;
+        margin-bottom: 5.2rem;
+        margin-left: 1rem;
+    }
+
+    #user-info-text h4{
+        font-size: 0.7rem;
+        position: absolute;
+        margin-left: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    #user-info-text h5{
+        font-size: 0.7rem;
+        position: absolute;
+        margin-left: 5rem;
+        margin-bottom: 5.6rem;
+    }
+
+    #user-info-text h6{
+        font-size: 0.5rem;
+        margin-top: 1.5rem;
+        margin-top: 9.5rem;
+    }
+
+
+
+}
