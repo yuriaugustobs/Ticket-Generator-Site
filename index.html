@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div id="container-logo">
+    <img src="/assets/images/logo-mark.svg" alt="Logo" class="logo-coding-conf">
+    <span class="logo-title">Comic World LTDA</span>
+    </div>
+  </header>
+  <main>
+    <img src="/assets/images/pattern-lines.svg" alt="Lines Pattern" class="pattern-Lines">
+
+    <div id="container-main-title">
+      <h1> Sua Jornada para a Comic World <br>
+        2025 Começa Aqui!</h1>
+      <h3> Reserve seu lugar para o o evento que irá mudar o mundo!</h3>
+    </div>
+    
+    <div id="container-form">
+      <h3 class="title-enviar-imagem-perfil">Enviar Imagem de Perfil</h3>
+      <label for="upload-file" class="upload-avatar">
+        <img src="/assets/images/icon-upload.svg" alt="Upload Icon" class="upload-icon">
+          <h4>Clique aqui para selecionar uma imagem</h4>
+          <input type="file" id="upload-file" name="upload-file" accept="image/*" class="upload-file" style="display: none;">
+      </label>
+
+      <h5 class="descricao-upload"> Envie sua foto (JPG ou PNG, tamanho máximo: 500kb) </h5>
+
+        <div class="form-nome-email-apelido">
+
+        <h4 class="nome-completo">Nome Completo</h4>
+        <input type="text" id="nome-completo" name="nome-completo" class="input-field" placeholder="Digite seu nome completo" required>
+
+        <h4 class="email">Seu melhor Email</h4>
+        <input type="email" id="email" name="email" class="input-field" placeholder="exemplo@exemplo.com" required>
+        
+        <button type="button" class="gerar-ticket" onclick="gerarTicket()">Gerar o meu Ticket!</button>
+      </div>
+  </div>
+
+  <div id="ticket-gerado" style="display: none;">
+    <h1>Parabéns, <span id="nameUser"></span> <br>
+    Seu ticket está pronto!</h1>
+    <h3>Seu ticket foi enviado para <span id="emailUser"></span>. <br> Cheque sua caixa de entrada!</h3>
+
+    <div class="new-ticket">
+       
+        <div class="logo-container-ticket">
+          <img src="/assets/images/logo-mark.svg" alt="logo" class="logoTicket">
+          <h3 id="h3-title">Comic World LTDA</h3>
+        </div>
+
+        <div class="date">
+          <h4 class="ticket-date"> <span class="data-geracao-ticket"> 27 de Janeiro de 2024 </span>
+        </div>
+
+          <img src="/assets/images/image-avatar.jpg" alt="User Avatar" class="user-avatar" id="userAvatar">
+          <div id="user-info-text">
+            <h4 class="name-in-ticket" id="userName">FULANO DA SILVA</h4>
+            <div class="icon-email"></div>
+            <h5 class="email-in-ticket" id="userEmail">EMAIL DO FULANO</h5>
+        <h6 class="ticket-number"><span id="ticketNumber"></span></h6>
+          </div>
+  </div>
+
+  </main>
+
+  <img src="/assets/images/pattern-squiggly-line-top.svg" alt="Squiggly Line Pattern" class="laco-topo-direito">
+
+  <img src="/assets/images/pattern-squiggly-line-bottom.svg" alt="Squiggly Line Pattern" class="laco-base-esquerdo">
+
+</body>
+</html>
